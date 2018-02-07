@@ -1,0 +1,14 @@
+.header-contents h1 {
+    font-size: 120px;
+    font-weight: 300;
+}
+
+.page-header {
+    min-height: 100%;
+    text-align: center;
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -15px;
+}

@@ -1,6 +1,12 @@
 from flask import Flask, render_template
+import random
 
 app = Flask(__name__, static_folder="../static/dist", template_folder="../static")
+
+
+def get_hello():
+    greeting_list = ['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej']
+    return random.choice(greeting_list)
 
 
 @app.route("/")
@@ -10,7 +16,7 @@ def index():
 
 @app.route("/hello")
 def hello():
-    return "Hello World!"
+    return get_hello()
 
 
 if __name__ == "__main__":
